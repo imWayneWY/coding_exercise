@@ -10,11 +10,11 @@
  */
 
 import React from 'react'
-import './Loading.css'
+import styles from './Loading.module.css'
 
 const Loading = () => {
   return(
-    <div className="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+    <div className={styles.roller}><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
   )
 }
 

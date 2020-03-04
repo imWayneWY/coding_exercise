@@ -14,11 +14,11 @@
  */
 
 import React, { useState, useEffect } from 'react'
-import CommunityCard from './../components/CommunityCard'
-import { getCommunities, getHomes } from './../fetch/fetch'
-import Loading from './../components/Loading'
-import ErrMsg from './../components/ErrMsg'
-import './CommunitiesList.css'
+import CommunityCard from '../components/CommunityCard'
+import { getCommunities, getHomes } from '../fetch/fetch'
+import Loading from '../components/Loading'
+import ErrMsg from '../components/ErrMsg'
+import styles from './CommunitiesList.module.css'
 
 const errMsg = 'Ops! We got an error, please contact im.weiyan@foxmail to report. Thanks'
 
@@ -99,7 +99,7 @@ const CommunitiesList = () => {
 
   // render communities list
   return(
-    <div className='root'>
+    <div className={styles.root}>
       {
         isError
         ? <ErrMsg msg={errMsg}/>

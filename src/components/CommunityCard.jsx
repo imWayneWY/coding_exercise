@@ -12,23 +12,23 @@
  */
 
 import React from 'react'
-import './CommunityCard.css'
+import styles from './CommunityCard.module.css'
 
 
 const CommunityCard = ({community}) => {
   return (
-    <div className='card'>
-      <div className='img-container'>
+    <div className={styles.card}>
+      <div className={styles.imgContainer}>
         {
           community.imgUrl
-          ? <img className='img' src={community.imgUrl} alt={community.name} />
-          : <img className='img' src='house_sale.svg' alt={community.name} />
+          ? <img className={styles.img} src={community.imgUrl} alt={community.name} />
+          : <img className={styles.img} src='house_sale.svg' alt={community.name} />
         }
       </div>
-      <div className='info-container'>
+      <div className={styles.infoContainer}>
         <h3>{community.name}</h3>
-        <i className='group'>{community.group}</i>
-        <p><span>Avg Price: </span><span className='price'>{community.price}</span></p>
+        <i className={styles.group}>{community.group}</i>
+        <p><span>Avg Price: </span><span className={styles.price}>{community.price}</span></p>
       </div>
     </div>
   )

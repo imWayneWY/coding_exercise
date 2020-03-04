@@ -11,15 +11,15 @@
  */
 
 import React, {useState} from 'react'
-import './ErrMsg.css'
+import styles from './ErrMsg.module.css'
 const ErrMsg = ({msg}) => {
   const [isShowing, setIsShowing] = useState('inline')
   const handleClick = () => {
     setIsShowing('none')
   }
   return (
-    <div className="alert" style={{display: isShowing}}>
-      <span className="closebtn" onClick={handleClick}>&times;</span> 
+    <div className={styles.alert} style={{display: isShowing}}>
+      <span className={styles.closebtn} onClick={handleClick}>&times;</span> 
       <strong>{msg}</strong>
     </div>
   )

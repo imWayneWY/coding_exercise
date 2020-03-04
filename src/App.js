@@ -1,7 +1,9 @@
-import React from 'react';
+import React from 'react'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
-import CommunitiesList from './pages/CommunitiesList';
-import './App.css';
+import CommunitiesList from './pages/CommunitiesList'
+import Index from './pages/Index'
+import './App.css'
+import Readme from './pages/Readme'
 
 function App() {
   return (
@@ -10,7 +12,9 @@ function App() {
         <img className='logo' src='OPENHOUSE-ai-logo.png' alt='logo'/>
       </div>
       <Switch>
-        <Route component={CommunitiesList} />
+        <Route path='/communities' component={CommunitiesList} />
+        <Route path='/readme' component={Readme} />
+        <Route component={Index} />
       </Switch>
       <div className='footer'>
         <strong>WeiYan</strong>
@@ -21,4 +25,4 @@ function App() {
   );
 }
 
-export default App;
+export default App
