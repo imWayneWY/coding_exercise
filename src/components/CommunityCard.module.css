@@ -21,10 +21,12 @@
   flex-direction: row;
   border: darkgray;
   box-shadow: 0px 0px 2px 2px darkgray;
+  padding: 4px;
+  border-radius: 4px;
 }
 
 .imgContainer{
-  width: 50%;
+  width: 60%;
   height: 240px;
 }
 
@@ -34,7 +36,7 @@
   object-fit: cover;
 }
 .infoContainer{
-  width: 50%;
+  width: 40%;
   height: 240px;
   padding-left: 20px;
   display: flex;
