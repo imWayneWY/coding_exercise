@@ -14,24 +14,26 @@
 
 
 .card{
-  margin: 20px;
+  margin-top: 30px;
   height: 240px;
   background-color: #f9fafd;
   display: flex;
   flex-direction: row;
-  box-shadow: 1px 1px 2px 2px darkgray;
+  border: darkgray;
+  box-shadow: 0px 0px 2px 2px darkgray;
 }
 
-.img-container{
+.imgContainer{
   width: 50%;
   height: 240px;
 }
 
 .img {
 	width: 100%;
-	height: 100%;
+  height: 100%;
+  object-fit: cover;
 }
-.info-container{
+.infoContainer{
   width: 50%;
   height: 240px;
   padding-left: 20px;
