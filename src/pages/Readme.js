@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from 'react'
 import MarkdownIt from 'markdown-it'
 import readme from './../README.md'
+import styles from './Readme.module.css'
 
 const Readme = () => {
   const [md, setMd] = useState(null)
@@ -13,7 +14,7 @@ const Readme = () => {
       ).render(text)
     ))
   })
-  return(<div dangerouslySetInnerHTML={{__html: md}}/>)
+  return(<div className={styles.root} dangerouslySetInnerHTML={{__html: md}}/>)
 }
 
 export default Readme

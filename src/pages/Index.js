@@ -19,6 +19,9 @@ const Index = () => {
       <Link className={styles.btn} to="/communities">
         Communities Demo
       </Link>
+      <Link className={styles.btn} to="/readme">
+        README.md
+      </Link>
     </div>
   )
 }

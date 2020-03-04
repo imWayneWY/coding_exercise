@@ -1,5 +1,5 @@
 import React from 'react'
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom'
 import CommunitiesList from './pages/CommunitiesList'
 import Index from './pages/Index'
 import './App.css'
@@ -9,7 +9,7 @@ function App() {
   return (
     <Router>
       <div className='banner'>
-        <img className='logo' src='OPENHOUSE-ai-logo.png' alt='logo'/>
+        <Link to='/'><img className='logo' src='OPENHOUSE-ai-logo.png' alt='logo'/></Link>
       </div>
       <Switch>
         <Route path='/communities' component={CommunitiesList} />
