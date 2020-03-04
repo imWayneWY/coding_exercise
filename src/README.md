@@ -29,4 +29,5 @@
   I also used to want to design a homes list page which can be visited after click the community card. I didn't implement it because the homes' information is a little lack,  and also considering the time limit.
 
 Github Link: https://github.com/imWayneWY/coding_exercise
+
 Online: http://123.56.226.100:88/
