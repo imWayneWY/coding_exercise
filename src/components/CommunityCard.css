@@ -1,0 +1,44 @@
+/* PC */
+@media screen and (min-width:992px){
+  .card{
+    width: 45%;
+  }
+}
+
+/* Mobile Device */
+@media screen and (max-width: 991px){
+  .card{
+    width: 90%;
+  }
+}
+
+
+.card{
+  margin: 20px;
+  height: 240px;
+  background-color: #f9fafd;
+  display: flex;
+  flex-direction: row;
+  box-shadow: 1px 1px 2px 2px darkgray;
+}
+
+.img-container{
+  width: 50%;
+  height: 240px;
+}
+
+.img {
+	width: 100%;
+	height: 100%;
+}
+.info-container{
+  width: 50%;
+  height: 240px;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.price{
+  color: orangered;
+}
