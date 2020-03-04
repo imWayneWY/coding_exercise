@@ -1,8 +1,10 @@
-.banner {
-  width: 100vw;
+.banner, .footer{
   height: 50px;
-  text-align: center;
   background-color: #f9fafd;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
 }
 .logo {
   margin-top: 4px;

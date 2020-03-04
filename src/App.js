@@ -12,6 +12,11 @@ function App() {
       <Switch>
         <Route component={CommunitiesList} />
       </Switch>
+      <div className='footer'>
+        <strong>WeiYan</strong>
+        <span>E-Mail: <a href="mailto:imweiyan@foxmail.com">im.weiyan@foxmail.com</a></span>
+        <span>Tel: <a href="tel: 587-439-8687">587-439-8687</a></span>
+      </div>
     </Router>
   );
 }

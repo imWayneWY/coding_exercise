@@ -25,6 +25,7 @@ const config = {
   responseType: 'json'
 }
 
-export function get(url) {
-  return axios.get(url, config)
-}
+const get = (url) => axios.get(url, config);
+
+export const getCommunities = get('/communities');
+export const getHomes = get('/homes');
