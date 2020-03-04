@@ -20,13 +20,26 @@ import Loading from '../components/Loading'
 import ErrMsg from '../components/ErrMsg'
 import styles from './CommunitiesList.module.css'
 
-const errMsg = 'Ops! We got an error, please contact im.weiyan@foxmail to report. Thanks'
+const errMsg: string = 'Ops! We got an error, please contact im.weiyan@foxmail to report. Thanks'
+
+interface ICommunity {
+  id: string,
+  name: string,
+  imgUrl: string,
+  group: string,
+  price: string
+}
+
+interface ICommunityPrice {
+  communityId: string,
+  prices: Array<number>,
+}
 
 const CommunitiesList = () => {
 
-  const [communities, setCommunities] = useState([])
-  const [isFetching, setIsFetching] = useState(false)
-  const [isError, setIsError] = useState(false)
+  const [communities, setCommunities] = useState<Array<ICommunity>>([])
+  const [isFetching, setIsFetching] = useState<boolean>(false)
+  const [isError, setIsError] = useState<boolean>(false)
   
   useEffect(() => {
     setIsFetching(true)
@@ -36,7 +49,7 @@ const CommunitiesList = () => {
         // fetch homes data
         getHomes.then(resHomes => {
           // store community's homes' price
-          let communityPrices = []
+          let communityPrices: Array<ICommunityPrice> = []
           if (resHomes.status !== 200) {
             setIsError(true)
             return

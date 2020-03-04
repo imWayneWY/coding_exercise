@@ -12,7 +12,8 @@
 
 import React, {useState} from 'react'
 import styles from './ErrMsg.module.css'
-const ErrMsg = ({msg}) => {
+
+const ErrMsg = ({ msg }: {msg: string}) => {
   const [isShowing, setIsShowing] = useState('inline')
   const handleClick = () => {
     setIsShowing('none')
